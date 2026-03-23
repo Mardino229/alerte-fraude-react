@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tertiary-container: #390003;
+  --color-on-primary: #002e6a;
+  --color-surface-container-low: #131b2e;
+  --color-on-primary-fixed: #001a42;
+  --color-outline-variant: #45464d;
+  --color-on-secondary-container: #a9bad3;
+  --color-primary-container: #00163a;
+  --color-primary-fixed-dim: #adc6ff;
+  --color-on-surface: #dae2fd;
+  --color-secondary-fixed-dim: #b7c8e1;
+  --color-error-container: #93000a;
+  --color-on-tertiary-fixed-variant: #930013;
+  --color-background: #6A89A7;
+  --color-primary: #adc6ff;
+  --color-on-error-container: #ffdad6;
+  --color-on-error: #690005;
+  --color-inverse-primary: #005ac2;
+  --color-on-primary-fixed-variant: #004395;
+  --color-surface-dim: #0b1326;
+  --color-error: #ffb4ab;
+  --color-on-secondary-fixed-variant: #38485d;
+  --color-surface-container-lowest: #060e20;
+  --color-secondary-fixed: #d3e4fe;
+  --color-outline: #909097;
+  --color-tertiary: #ffb3ad;
+  --color-tertiary-fixed-dim: #ffb3ad;
+  --color-secondary-container: #3a4a5f;
+  --color-inverse-surface: #dae2fd;
+  --color-surface-container: #272757;
+  --color-on-secondary-fixed: #0b1c30;
+  --color-on-primary-container: #357df1;
+  --color-surface-container-high: #222a3d;
+  --color-surface-tint: #adc6ff;
+  --color-on-surface-variant: #c6c6cd;
+  --color-on-tertiary-fixed: #410004;
+  --color-on-secondary: #213145;
+  --color-on-tertiary-container: #eb4141;
+  --color-on-background: #dae2fd;
+  --color-surface-container-highest: #2d3449;
+  --color-inverse-on-surface: #283044;
+  --color-surface-variant: #2d3449;
+  --color-on-tertiary: #68000a;
+  --color-surface-bright: #31394d;
+  --color-tertiary-fixed: #ffdad7;
+  --color-secondary: #b7c8e1;
+  --color-surface: #0b1326;
+  --color-primary-fixed: #d8e2ff;
+
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  --radius-default: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-panel {
+    background: rgba(45, 52, 73, 0.6);
+    backdrop-filter: blur(20px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    @apply bg-background text-on-surface font-body min-h-screen selection:bg-primary/30;
+}
