@@ -1,6 +1,6 @@
 
 
-export default function TableHeader({activeCount}: {activeCount: number}) {
+const TableHeader: React.FC<{activeCount: number}> = ({activeCount}) => {
     return (
         <section className="mb-12 relative overflow-hidden rounded-xl bg-surface-container p-8 border border-white/5">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
@@ -15,6 +15,7 @@ export default function TableHeader({activeCount}: {activeCount: number}) {
             </div>
           </section>
     )
-
 }
+
+export default TableHeader;
         
